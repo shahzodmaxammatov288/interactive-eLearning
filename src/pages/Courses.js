@@ -11,21 +11,21 @@ const Courses = () => {
       <Course>
         <h2>Interaktiv React va Redux</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="./courses/react">
           <img src={react} alt="Interaktiv React va Redux" />
         </Link>
       </Course>
       <Course>
         <h2>Tez kunda...😯</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="./courses/soon">
           <img src={soon} alt="Tez kunda..." />
         </Link>
       </Course>
       <Course>
         <h2>Interaktiv JavaScript</h2>
         <div className="line"></div>
-        <Link>
+        <Link to="./courses/javascript">
           <img src={js} alt="Interaktiv JavaScript" />
         </Link>
       </Course>
@@ -35,14 +35,14 @@ const Courses = () => {
 
 const StyledCourses = styled.div`
   min-height: 100vh;
-  padding: 5rem 10rem;
+  padding: 3rem 10rem;
   h2 {
     padding: 1rem 0;
   }
 `;
 
 const Course = styled.div`
-  padding-bottom: 10rem;
+  padding-bottom: 3rem;
   .line {
     height: 0.5rem;
     background: #ccc;
